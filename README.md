@@ -6,6 +6,8 @@ Hello Folks,
 Welcome to my Temperature Converter App. Here You can convert one form of temperature into other.
 The project TemperaturConverter  is made using HTML, CSS, JS.
 
+And yes, most importantly the app is Responsive!!
+
 Given buttons has the following functions:
 1. C= To enter the tempearture in CELSIUS
 2. F= To enter the tempearture in FAHRENHEIT
