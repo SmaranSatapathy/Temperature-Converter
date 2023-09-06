@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Coverter</title>
 
-    <!-- CSS LINKS -->
+    <!-- CSS SECTION -->
     <style>
         body{
     background-color: black;
@@ -50,7 +50,6 @@ textarea{
 
 
 #numpad{
-    /* display: flex; */
     margin-top: 50px;
     background-color: yellow;
     border-radius: 20px;
@@ -65,8 +64,8 @@ textarea{
   flex-wrap: wrap
 }
 .row button{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -79,9 +78,7 @@ textarea{
     background-color: black;
     color: white;
     font-weight: bolder;
-    font-size:small;
-    /* font-size: x-large; */
-    cursor: pointer;
+    font-size: x-large;
 }
 
 footer{
@@ -97,7 +94,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
 }
-
 
 footer ul {
     display: flex;
@@ -117,14 +113,13 @@ footer img{
 }
 
     </style>
+    
 </head>
 <body>
 
     <!-- HEADER SECTION -->
     <nav>
-        <strong><h1>Welcome To Temprature Converter</h1></strong>
-
-        
+        <strong><h1>Welcome To Temprature Converter</h1></strong>    
     </nav>
 
 
@@ -133,7 +128,6 @@ footer img{
     <textarea name="show" id="show" cols="30" rows="3" placeholder="Enter the temperature "></textarea>
 
     <!-- NUMPAD SECTION -->
-
     <section>
      
 
@@ -154,12 +148,8 @@ footer img{
                 <button id="btn" class="btn">8</button>
                 <button id="btn" class="btn">9</button>
             </div>
-            <!-- <div class="row" id="row-2">
-                <button id="btn" class="btn">4</button>
-                <button id="btn" class="btn">5</button>
-                <button id="btn" class="btn">6</button>
-            </div> -->
-            <div class="row" id="row-3">
+           
+            <div class="row" id="row-2">
                 <button id="btn" class="btn">1</button>
                 <button id="btn" class="btn">2</button>
                 <button id="btn" class="btn">3</button>
@@ -167,27 +157,16 @@ footer img{
                 <button id="btn" class="btn">.</button>
                 <button id="btn" class="btn">BKSP</button>
             </div>
-            <div class="row" id="row-4">
-                <!-- <button id="btn" class="btn">0</button>
-                <button id="btn" class="btn">.</button> -->
-                <!-- <button id="btn" class="btn">CF</button> -->
-            </div>
-            <div class="row" id="row-5">
-                <!-- <button id="btn" class="btn">CLEAR</button> -->
-                <!-- <button id="btn" class="btn">INV</button>
-                <button id="btn" class="btn">BKSP</button> -->
-            </div>
+           
             <hr>
             <h2>Choose the coversion function</h2>
-            <div class="row" id="row-6">
+            <div class="row" id="row-3">
                 <button id="btn" class="btn">FC</button>
                 <button id="btn" class="btn">FK</button>
                 <button id="btn" class="btn">CF</button>
                 <button id="btn" class="btn">CK</button>
                 <button id="btn" class="btn">KC</button>
                 <button id="btn" class="btn">KF</button>
-                <!-- <button id="btn" class="btn">INV</button>
-                <button id="btn" class="btn">BKSP</button> -->
             </div>
         </div>
     </section>
@@ -195,20 +174,19 @@ footer img{
     <!-- FOOTER SECTION -->
     <footer>
         <h2>	&#169 By <strong>SMARAN SATAPATHY</strong></h2>
-        <!-- <a href="https://www.linkedin.com/in/smaran-satapathy-388270257/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="" width="30px" height="30px" class="insta"></a> <a href="https://www.instagram.com/smaransatapathy/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="" width="30px" height="30px"></a><a href="mailto:smaransatapathy31@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="" width="40px" height="30px"></a> -->
-        <!-- <li class="dev"> &#169 by <strong>Smaran Satapathy</strong></li> -->
+ <h2>	&#169 By <strong>SMARAN SATAPATHY</strong></h2>
+    
        <ul>
         <li><a href="https://www.linkedin.com/in/smaran-satapathy-388270257/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"  alt="" width="30px" height="30px"></a></li>
         <li><a href="https://github.com/Smaran-Satapathy" target="_blank" class="gitHub"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" width="30px" height="30px" ></a></li>
         <li><a href="https://www.instagram.com/smaransatapathy/" target="_blank"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-png-full-colour-glyph.png"  alt="" width="30px" height="30px"></a></li>
         <li><a href="mailto:smaransatapathy31@gmail.com" target="_blank" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="" width="40px" height="30px"></a></li>
-       </ul>
-    </footer>
+       </ul>    
     </footer>
 
-    <!-- <script src="/index.js"></script> -->
+<!--JAVASCRIPT SECTION-->
     <script>
-        let string =""
+let string =""
 let fahr=""
 let cel=""
 let kel=""
@@ -229,7 +207,6 @@ Array.from(buttons).forEach((button)=>{
         // JavaScript to convert CELSIUS TO FAHRENHEIT
         if(e.target.innerHTML=='CF' && countc!=0)
         {
-            // count++;
             fahr=((9*string)/5)+32
             fahr=eval(fahr)
             
@@ -240,7 +217,6 @@ Array.from(buttons).forEach((button)=>{
          // JavaScript to convert CELSIUS TO KELVIN
         else if(e.target.innerHTML=='CK' && countc!=0)
         {
-            // count++;
             kel=parseInt(string)+273.15
             kel=eval(kel)
             
@@ -251,7 +227,6 @@ Array.from(buttons).forEach((button)=>{
          // JavaScript to convert FAHRENHEIT TO CELSIUS
         else if(e.target.innerHTML=='FC' &&countf!=0)
         {
-            // count++;
             cel=(5*(string-32))/9
             cel=eval(cel)
             
@@ -262,7 +237,6 @@ Array.from(buttons).forEach((button)=>{
         // JavaScript to convert FAHRENHEIT TO KELVIN
         else if(e.target.innerHTML=='FK' &&countf!=0)
         {
-            // count++;
             kel=((5*(string-32))/9)+273.15
             kel=eval(kel)
             
@@ -273,7 +247,6 @@ Array.from(buttons).forEach((button)=>{
         // JavaScript to convert KELVIN TO CELSIUS
         else if(e.target.innerHTML=='KC' &&countk!=0)
         {
-            // count++;
             cel=string-273.15
             cel=eval(cel)
             
@@ -284,7 +257,6 @@ Array.from(buttons).forEach((button)=>{
         // JavaScript to convert KELVIN TO FAHRENHEIT
         else if(e.target.innerHTML=='KF' &&countk!=0)
         {
-            // count++;
             fahr=(((string-273.15)*9)/5)+32
             fahr=eval(fahr)
             
@@ -332,32 +304,15 @@ Array.from(buttons).forEach((button)=>{
            countk++
         }
 
-        // else if(e.target.innerHTML=='INV')
-        // {
-        //     cel=(5*(fahr-32))/9
-        //         cel=eval(cel)
-                 
-        //         document.querySelector('textarea').value=` Temperature in Fahr is: ${fahr} \n Ans: Temperature in Cel is: ${cel}`
-        //         // document.querySelector('textarea').value=""
-        // }
-
         //JavaScript to enter the numbers in the textarea
         else{
             console.log(e.target)
         string=string+e.target.innerHTML
         document.querySelector('textarea').value=string
         }
-
-
-        
-
-       
-        
+  
     })
 })
-
-//C/5=(F-32)/9
-//=> (9C/5)+32
     </script>
 </body>
 </html>
